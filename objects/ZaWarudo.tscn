@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/Planet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=2]
+
+[node name="ZaWarudo" type="Node2D"]
+
+[node name="Planets" type="Node2D" parent="."]
+
+[node name="Planet" parent="Planets" instance=ExtResource( 1 )]
+position = Vector2( 307.294, 382.592 )
+scale = Vector2( 0.5, 0.5 )
+gravity = 2000
+
+[node name="Planet2" parent="Planets" instance=ExtResource( 1 )]
+position = Vector2( 1061.07, 577.753 )
+scale = Vector2( 0.5, 0.5 )
+gravity = 2000
+
+[node name="Planet3" parent="Planets" instance=ExtResource( 1 )]
+position = Vector2( 762.671, 160.56 )
+scale = Vector2( 0.5, 0.5 )
+gravity = 3000
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 304.056, 226.274 )
